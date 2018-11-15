@@ -1,11 +1,11 @@
 object BerlinClock {
 
-  def secondsLampStatus(numOfSeconds: Int): Boolean = {
+  def secondsLampStatus(numOfSeconds: Int): String = {
 
     numOfSeconds match {
 
-      case seconds if seconds % 2 == 0 => false
-      case _ => true
+      case seconds if seconds % 2 == 0 => "Y"
+      case _ => "O"
 
     }
   }

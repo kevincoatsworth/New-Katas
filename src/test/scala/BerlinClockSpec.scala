@@ -8,27 +8,27 @@ class BerlinClockSpec extends WordSpec with MustMatchers {
 
     "return false when given 0" in {
 
-      secondsLampStatus(0) mustEqual false
+      secondsLampStatus(0) mustEqual "Y"
     }
 
     "return true when given 1" in {
 
-      secondsLampStatus(1) mustEqual true
+      secondsLampStatus(1) mustEqual "O"
     }
 
     "return false when given 10" in {
 
-      secondsLampStatus(10) mustEqual false
+      secondsLampStatus(10) mustEqual "Y"
     }
 
     "return true when given 39" in {
 
-      secondsLampStatus(39) mustEqual true
+      secondsLampStatus(39) mustEqual "O"
     }
 
     "return false when given 62" in {
 
-      secondsLampStatus(62) mustEqual false
+      secondsLampStatus(62) mustEqual "Y"
     }
   }
 
